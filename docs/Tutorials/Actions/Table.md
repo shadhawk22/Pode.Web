@@ -97,7 +97,7 @@ To hide a column within a table, you can use [`Hide-PodeWebTableColumn`](../../.
 ```powershell
 New-PodeWebCard -Content @(
     New-PodeWebButton -Name 'HideCPU' -ScriptBlock {
-        Hide-PodeWebColumn -Name 'Processes' -Key 'CPU'
+        Hide-PodeWebTableColumn -Name 'Processes' -Key 'CPU'
     }
 
     New-PodeWebTable `
@@ -130,7 +130,7 @@ To show a column within a table, you can use [`Show-PodeWebTableColumn`](../../.
 ```powershell
 New-PodeWebCard -Content @(
     New-PodeWebButton -Name 'ShowCPU' -ScriptBlock {
-        Show-PodeWebColumn -Name 'Processes' -Key 'CPU'
+        Show-PodeWebTableColumn -Name 'Processes' -Key 'CPU'
     }
 
     New-PodeWebTable `
